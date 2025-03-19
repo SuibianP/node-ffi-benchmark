@@ -1,0 +1,21 @@
+{
+  "name": "ffi-bench",
+  "version": "1.0.0",
+  "main": "bench.js",
+  "scripts": {
+    "build": "node-gyp configure && node-gyp build",
+    "bench": "node bench.js"
+  },
+  "gypfile": true,
+  "dependencies": {
+    "benny": "^3.7.1",
+    "bindings": "^1.5.0",
+    "ffi-rs": "^1.2.9",
+    "koffi": "^2.10.1",
+    "node-addon-api": "^8.3.1",
+    "node-gyp": "^11.1.0"
+  },
+  "optionalDependencies":{
+    "ffi-napi": "^4.0.3"
+  }
+}
